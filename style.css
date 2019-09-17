@@ -69,7 +69,7 @@ img[src="img/crockpot-icon-white.PNG"]{
 }
 
 .bgimg{
-	background-image: url('../img/wood.jpg');
+	background-image: url('img/wood.jpg');
 	background-size: 100% auto;
 	
 	height: 33vh;
