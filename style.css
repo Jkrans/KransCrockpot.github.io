@@ -57,19 +57,15 @@ img[src="img/crockpot-icon-white.png"]{
 .container{
 	
 	padding: 75px 15px 38px 15px;
-	display: flex;
-	
+	display: flex;	
 	justify-content: center;
 	flex-wrap: wrap;
 	width:90%;
-	
-	
 }
 
 .column-1{
 	width: 600px;
-	
-	
+	padding: 0 4%
 }
 
 
