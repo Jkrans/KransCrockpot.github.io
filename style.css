@@ -29,6 +29,8 @@ img[src="img/crockpot-icon-white.png"]{
 	color: white;
 	background: tomato;
 	border-radius: 5%;
+	min-width: 5em;
+    text-align: center;
 }
 .navbar-default .container-fluid 
 .navbar-collapse .navbar-nav>.open>a{
@@ -143,6 +145,7 @@ h1{
 	color: #36454f;
 	padding: 5px 15px;
 	display: inline-block;
+	text-align: center;
 }
 
 @media screen and (min-width: 601px) {
