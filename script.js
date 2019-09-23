@@ -38,7 +38,7 @@ $(document).ready(function(){
   });*/
   
   
-  $(document).click(function () {
+  $(document).on("click tap", function () {
     $('.navbar-collapse').collapse('hide');
   });
 
