@@ -26,6 +26,23 @@ $(document).ready(function(){
       });
     }
   });
+  
+  //To close navbar when user clicks outside dropdown
+ /* $(document).click(function (e) {
+    var clickover = $(e.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+  });*/
+  
+  
+  $(document).click(function () {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+   
 })
 
 
