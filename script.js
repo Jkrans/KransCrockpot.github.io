@@ -64,3 +64,7 @@ window.addEventListener('scroll', () => {
 	}
 });
 
+function displayRecipe(ID) {
+  document.getElementById(ID).style.display = "flex";
+}
+

@@ -39,41 +39,39 @@
 			
 				<div  class="collapse navbar-collapse" id="myNavbar">			
 					<ul class="nav navbar-nav navbar-right">
-					  <li class="active"><a href="#home">Top</a></li>
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Soups<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-color" href="#CPS">Creamy Potato Soup</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CPS')">Creamy Potato Soup</a></li>
 							</ul>
 						</li>
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pastas<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-color" href="#CTS">Christar's Tortellini and Sausage</a></li>
-								<li><a class="dropdown-color" href="#TP">Taco Pasta</a></li>
-								<li><a class="dropdown-color" href="#MaC">Mac and Cheese</a></li>
-								<li><a class="dropdown-color" href="#BZ">Baked Ziti</a></li>
-								<li><a class="dropdown-color" href="#CMC">Cheeseburger Macaroni Casserole</a></li>
-								<li><a class="dropdown-color" href="#CS">Cheesy Spaghetti</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CTS')">Christar's Tortellini and Sausage</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('MaC')">Mac and Cheese</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('BZ')">Baked Ziti</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CMC')">Cheeseburger Macaroni Casserole</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CS')">Cheesy Spaghetti</a></li>
 							</ul>
 						</li>
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Chicken<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-color" href="#CEC">Chicken Enchilada Casserole</a></li>
-								<li><a class="dropdown-color" href="#CCBTTB">Cheesy Chicken, Bacon, Tator Tot Bake</a></li>
-								<li><a class="dropdown-color" href="#QCT">Queso Chicken Tacos</a></li>
-								<li><a class="dropdown-color" href="#CCP">Cheesy Chicken Penne</a></li>
-								<li><a class="dropdown-color" href="#CBB">Chicken Burrito Bowl</a></li>
-								<li><a class="dropdown-color" href="#BBQC">BBQ Chicken</a></li>
-								<li><a class="dropdown-color" href="#CAT">Chicken Alfredo Tortellini</a></li>
-								<li><a class="dropdown-color" href="#ZIC">Zesty Italian Chicken</a></li>
-								<li><a class="dropdown-color" href="#CRCAP">Creamy Ranch Chicken and Potatoes</a></li>
-								<li><a class="dropdown-color" href="#PMCP">Pesto Mozzarella Chicken Pasta</a></li>
-								<li><a class="dropdown-color" href="#CBR">Chicken Bacon Ranch</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CEC')">Chicken Enchilada Casserole</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CCBTTB')">Cheesy Chicken, Bacon, Tator Tot Bake</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('QCT')">Queso Chicken Tacos</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CCP')">Cheesy Chicken Penne</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CBB')">Chicken Burrito Bowl</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('BBQC')">BBQ Chicken</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CAT')">Chicken Alfredo Tortellini</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('ZIC')">Zesty Italian Chicken</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CRCAP')">Creamy Ranch Chicken and Potatoes</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('PMCP')">Pesto Mozzarella Chicken Pasta</a></li>
+								<li><a class="dropdown-color" onclick="displayRecipe('CBR')">Chicken Bacon Ranch</a></li>
 							</ul>
 						</li>
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Misc<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-							<li><a class="dropdown-color" href="#CCC">Chili Cheese Casserole</a></li>
-							  <li><a class="dropdown-color" href="#SAP">Sausage and Peppers</a></li>					 
+							<li><a class="dropdown-color" onclick="displayRecipe('CCC')">Chili Cheese Casserole</a></li>
+							  <li><a class="dropdown-color" onclick="displayRecipe('SAP')">Sausage and Peppers</a></li>					 
 							</ul>
 						</li>
 					</ul>
@@ -96,8 +94,8 @@
 			-->
 			
 			<!--Soups-->		
-			<article class="line-container">
-				<div id="CPS" class="container">
+			<article id="CPS" class="line-container" style="display: none;">
+				<div class="container">
 					<div class="column-1">
 						<h1>Creamy Potato Soup</h1>
 						<h2>Ingredients:</h2>
@@ -124,8 +122,8 @@
 			</article>
 			
 			<!--Pastas-->
-			<article class="line-container">		
-				<div id="CTS" class="container">
+			<article id="CTS" class="line-container"  style="display: none;">		
+				<div class="container">
 					<div class="column-1">	
 						<h1>Christar's Tortellini and Sausage</h1>			
 						<h2>Ingredients:</h2>
@@ -151,8 +149,8 @@
 				</div>			
 			</article>
 			
-			<article class="line-container">		
-				<div id="TP" class="container">
+			<article id="TP" class="line-container" style="display: none;">		
+				<div  class="container">
 					<div class="column-1">	
 						<h1>Taco Pasta</h1>			
 						<h2>Ingredients:</h2>
@@ -184,8 +182,8 @@
 				</div>			
 			</article>
 			
-			<article class="line-container">		
-				<div id="MaC" class="container">
+			<article id="MaC" class="line-container" style="display: none;">		
+				<div  class="container">
 					<div class="column-1">	
 						<h1>Mac and Cheese</h1>			
 						<h2>Ingredients:</h2>
@@ -214,8 +212,8 @@
 				</div>			
 			</article>		
 			
-			<article class="line-container">
-				<div id="BZ" class="container">
+			<article id="BZ" class="line-container" style="display: none;">
+				<div  class="container">
 				<div class="column-1">
 					<h1>Baked Ziti</h1>
 					<h2>Ingredients:</h2>
@@ -257,8 +255,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="CMC" class="container">
+			<article id="CMC" class="line-container" style="display: none;">
+				<div  class="container">
 				<div class="column-1">
 					<h1>Cheeseburger Macaroni Casserole</h1>
 					<h2>Ingredients:</h2>
@@ -293,8 +291,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="CS" class="container">
+			<article id="CS" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>Cheesy Spaghetti</h1>
 					<h2>Ingredients:</h2>
@@ -338,8 +336,8 @@
 			Chicken
 			
 			-->
-			<article class="line-container">
-				<div id="CEC" class="container">
+			<article id="CEC" class="line-container" style="display: none;">
+				<div class="container">
 					<div class="column-1">
 						<h1>Chicken Enchilada Casserole</h1>
 						<h2>Ingredients:</h2>
@@ -370,8 +368,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="CCBTTB" class="container">
+			<article id="CCBTTB" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>Cheesy Chicken, Bacon, Tater Tot Bake</h1>
 					<h2>Ingredients:</h2>
@@ -403,8 +401,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="QCT" class="container">
+			<article id="QCT" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>Queso Chicken Tacos</h1>
 					<h2>Ingredients:</h2>
@@ -432,8 +430,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="CCP" class="container">
+			<article id="CCP" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>Cheesy Chicken Penne</h1>
 					<h2>Ingredients:</h2>
@@ -470,8 +468,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="CBB" class="container">
+			<article id="CBB" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>Chicken Burrito Bowl</h1>
 					<h2>Ingredients:</h2>
@@ -507,8 +505,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="BBQC" class="container">
+			<article id="BBQC" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>BBQ Chicken</h1>
 					<h2>Ingredients:</h2>
@@ -535,8 +533,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="CAT" class="container">
+			<article id="CAT" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>Chicken Alfredo Tortellini</h1>
 					<h2>Ingredients:</h2>
@@ -560,8 +558,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="ZIC" class="container">
+			<article id="ZIC" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>Zesty Italian Chicken</h1>
 					<h2>Ingredients:</h2>
@@ -588,8 +586,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="CRCAP" class="container">
+			<article id="CRCAP" class="line-container" style="display: none;">
+				<div class="container">
 					<div class="column-1">
 						<h1>Creamy Ranch Chicken and Potatoes</h1>
 						<h2>Ingredients:</h2>
@@ -619,8 +617,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="PMCP" class="container">
+			<article id="PMCP" class="line-container" style="display: none;">
+				<div class="container">
 					<div class="column-1">
 						<h1>Pesto Mozzarella Chicken Pasta</h1>
 						<h2>Ingredients:</h2>
@@ -651,8 +649,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="CBR" class="container">
+			<article id="CBR" class="line-container" style="display: none;">
+				<div class="container">
 				<div class="column-1">
 					<h1>Chicken Bacon Ranch</h1>
 					<h2>Ingredients:</h2>
@@ -681,8 +679,8 @@
 			<!--
 			Misc
 			-->
-			<article class="line-container">
-				<div id="CCC" class="container">
+			<article id="CCC" class="line-container" style="display: none;">
+				<div class="container">
 					<div class="column-1">
 						<h1>Chili Cheese Casserole</h1>
 						<h2>Ingredients:</h2>
@@ -706,8 +704,8 @@
 				</div>
 			</article>
 			
-			<article class="line-container">
-				<div id="SAP" class="container">
+			<article id="SAP" class="line-container" style="display: none;">
+				<div class="container">
 					<div class="column-1">
 						<h1>Sausage and Peppers</h1>
 						<h2>Ingredients:</h2>
@@ -733,30 +731,7 @@
 				</div>
 			</article>
 		</main>
-		<!--
-		---
-		---
-		Footer-ish
-		---
-		---
-		-->
-		
-		<footer class="line-container">
-			<div class="bgimg">
-				<div id="" class="container">
-				</div>
-			</div>
-		</footer>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		<script src="script.js"></script>
 	</body>
 
