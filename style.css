@@ -7,6 +7,11 @@ img[src="img/crockpot-icon-white.png"]{
 	opacity: 0.9;
 }
 
+.first-img{
+	display: flex;
+	margin-top: 40%;
+}
+
 .navbar-default{
 	background-color: #36454f;
 	border-radius: 0;
