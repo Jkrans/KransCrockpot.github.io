@@ -66,6 +66,6 @@ window.addEventListener('scroll', () => {
 
 function displayRecipe(ID) {
   document.getElementById(ID).style.display = "flex";
-  document.getElementById("cpimg").style.display="none";
+  document.getElementById("cpimg").style.display = "none";
 }
 
