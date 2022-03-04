@@ -9,7 +9,10 @@ img[src="img/crockpot-icon-white.png"]{
 
 .first-img{
 	display: flex;
-	margin-top: 40%;
+	margin-top: 35%;
+	animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-direction: normal; 
 }
 
 .navbar-default{
@@ -56,6 +59,11 @@ img[src="img/crockpot-icon-white.png"]{
 
 .dropdown-color{color: white !important}
 .dropdown-color:hover{color: white !important}
+
+@keyframes fadeIn {
+	0%   {opacity: 0;margin-top:80%;}	
+	100% {top:0px;}
+  }
 
 /* main content container */
 
