@@ -1,5 +1,5 @@
 
-
+// Recipe objects
 let recipes = {
     "Hot Potato Soup": {
         ingredients: [
@@ -509,10 +509,15 @@ let recipes = {
     }
 
 
-}
+};
+
 // how to get the recipe name which is the key in the recipes object. 
 Object.keys(recipes)[0]
 
+/**
+ * 
+ * @param {The recipe_name should match the key in the recipes object} recipe_name 
+ */
 function getRecipe(recipe_name) {
     document.getElementById("recipeName").innerHTML = recipe_name;
 
