@@ -1,3 +1,6 @@
+let isRecipeDisplayed = false;
+
+
 //Crockpot JavaScript
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
@@ -15,7 +18,14 @@ $(document).on("click tap", function () {
  * @param {*} ID 
  */
 function displayRecipe(ID) {
-  document.getElementById(ID).style.display = "flex";
-  document.getElementById("cpimg").style.display = "none";
+  
+  if (!isRecipeDisplayed) {
+    document.getElementById(ID).style.display = "flex";
+    document.getElementById("cpimg").style.display = "none";
+  }
+  else return;
+
+  isRecipeDisplayed = true; 
+  
 }
 
