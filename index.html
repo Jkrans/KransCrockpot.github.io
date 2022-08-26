@@ -1,100 +1,143 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Krockpot Recipes</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="img/crockpot-icon.png">	
-		<link rel="apple-touch-icon" sizes="180x180" href="img/plate.jpg">		
-		<link href="https://fonts.googleapis.com/css?family=Acme|Shadows+Into+Light" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="style.css">
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
-	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-		<nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container-fluid">
+<head>
+	<title>Krockpot Recipes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/crockpot-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/plate.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Shadows+Into+Light" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
 			<div class="navbar-header">
-			<!--button for navbar collapse bootstrap-->
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>     
-			  </button>
-			  <a class="navbar-brand visible-xs visible-sm" href="#home">Krock-Pot</a>
+				<!--button for navbar collapse bootstrap-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand visible-xs visible-sm" href="#home">Krock-Pot</a>
 			</div>
 			<!--Div for collapsible navbar bootstrap-->
-			
-				<div  class="collapse navbar-collapse" id="myNavbar">			
-					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Soups<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a class="dropdown-color" onclick="getRecipe('Hot Potato Soup'), displayRecipe('displayRec')">Hot Potato Soup</a>
-								</li>
-							</ul>
-						</li>
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pastas<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-color" onclick="getRecipe('Christar\'s Tortellini and Sausage'), displayRecipe('displayRec')">Christar's Tortellini and Sausage</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Mac and Cheese'), displayRecipe('displayRec')">Mac and Cheese</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Baked Ziti'), displayRecipe('displayRec')">Baked Ziti</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Cheeseburger Macaroni Casserole'), displayRecipe('displayRec')">Cheeseburger Macaroni Casserole</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Cheesy Spaghetti'), displayRecipe('displayRec')">Cheesy Spaghetti</a></li>
-							</ul>
-						</li>
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Chicken<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-color" onclick="getRecipe('Chicken Enchilada Casserole'), displayRecipe('displayRec')">Chicken Enchilada Casserole</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Cheesy Chicken, Bacon, Tator Tot Bake'), displayRecipe('displayRec')">Cheesy Chicken, Bacon, Tator Tot Bake</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Queso Chicken Tacos'), displayRecipe('displayRec')">Queso Chicken Tacos</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Cheesy Chicken Penne'), displayRecipe('displayRec')">Cheesy Chicken Penne</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Chicken Burrito Bowl'), displayRecipe('displayRec')">Chicken Burrito Bowl</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('BBQ Chicken'), displayRecipe('displayRec')">BBQ Chicken</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Chicken Alfredo Tortellini'), displayRecipe('displayRec')">Chicken Alfredo Tortellini</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Zesty Italian Chicken'), displayRecipe('displayRec')">Zesty Italian Chicken</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Creamy Ranch Chicken and Potatoes'), displayRecipe('displayRec')">Creamy Ranch Chicken and Potatoes</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Pesto Mozzarella Chicken Pasta'), displayRecipe('displayRec')">Pesto Mozzarella Chicken Pasta</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Chicken Bacon Ranch'), displayRecipe('displayRec')">Chicken Bacon Ranch</a></li>
-							</ul>
-						</li>
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Misc<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-color" onclick="getRecipe('Chili Cheese Casserole'), displayRecipe('displayRec')">Chili Cheese Casserole</a></li>
-								<li><a class="dropdown-color" onclick="getRecipe('Sausage and Peppers'), displayRecipe('displayRec')">Sausage and Peppers</a></li>					 
-							</ul>
-						</li>
-					</ul>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Soups<span
+								class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-color"
+									onclick="getRecipe('Hot Potato Soup'), displayRecipe('displayRec')">Hot Potato
+									Soup</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pastas<span
+								class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Christar\'s Tortellini and Sausage'), displayRecipe('displayRec')">Christar's
+									Tortellini and Sausage</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Mac and Cheese'), displayRecipe('displayRec')">Mac and
+									Cheese</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Baked Ziti'), displayRecipe('displayRec')">Baked Ziti</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Cheeseburger Macaroni Casserole'), displayRecipe('displayRec')">Cheeseburger
+									Macaroni Casserole</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Cheesy Spaghetti'), displayRecipe('displayRec')">Cheesy
+									Spaghetti</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Chicken<span
+								class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Chicken Enchilada Casserole'), displayRecipe('displayRec')">Chicken
+									Enchilada Casserole</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Cheesy Chicken, Bacon, Tater Tot Bake'), displayRecipe('displayRec')">Cheesy
+									Chicken, Bacon, Tator Tot Bake</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Queso Chicken Tacos'), displayRecipe('displayRec')">Queso
+									Chicken Tacos</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Cheesy Chicken Penne'), displayRecipe('displayRec')">Cheesy
+									Chicken Penne</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Chicken Burrito Bowl'), displayRecipe('displayRec')">Chicken
+									Burrito Bowl</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('BBQ Chicken'), displayRecipe('displayRec')">BBQ Chicken</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Chicken Alfredo Tortellini'), displayRecipe('displayRec')">Chicken
+									Alfredo Tortellini</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Zesty Italian Chicken'), displayRecipe('displayRec')">Zesty
+									Italian Chicken</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Creamy Ranch Chicken and Potatoes'), displayRecipe('displayRec')">Creamy
+									Ranch Chicken and Potatoes</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Pesto Mozzarella Chicken Pasta'), displayRecipe('displayRec')">Pesto
+									Mozzarella Chicken Pasta</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Chicken Bacon Ranch'), displayRecipe('displayRec')">Chicken
+									Bacon Ranch</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Misc<span
+								class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Chili Cheese Casserole'), displayRecipe('displayRec')">Chili
+									Cheese Casserole</a></li>
+							<li><a class="dropdown-color"
+									onclick="getRecipe('Sausage and Peppers'), displayRecipe('displayRec')">Sausage and
+									Peppers</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+
+	<div id="cpimg" class="container">
+		<img class="first-img" src="img/crockpot-icon.png">
+	</div>
+
+	<main>
+		<article id="displayRec" class="line-container" style="display: none;">
+			<div class="container">
+				<div class="column-1">
+					<h1 id="recipeName"></h1>
+					<h2>Ingredients:</h2>
+					<ul id="ingredients"></ul>
+				</div>
+				<div class="column-1">
+					<h2>Instructions:</h2>
+					<ol id="instructions"></ol>
+					<a class="recipe-links" href="#" target="_blank"></a>
 				</div>
 			</div>
-		  
-		</nav>
+		</article>
+	</main>
 
-		<div id="cpimg" class="container">
-			<img class="first-img" src="img/crockpot-icon.png">
-		</div>
-		
-		<main>				
-			<article id="displayRec" class="line-container"  style="display: none;">		
-				<div class="container">
-					<div class="column-1">	
-						<h1 id = "recipeName"></h1>			
-						<h2>Ingredients:</h2>
-							<ul id="ingredients"></ul>
-					</div>
-					<div class="column-1">
-						<h2>Instructions:</h2>
-						<ol id="instructions"></ol>
-						<a class="recipe-links" href="#" target="_blank"></a>
-					</div>
-				</div>			
-			</article>
-		</main>
+	<script src="script.js"></script>
+	<script src="recipeData.js"></script>
+</body>
 
-		<script src="script.js"></script>
-		<script src="recipeData.js"></script>
-	</body>
 </html>
